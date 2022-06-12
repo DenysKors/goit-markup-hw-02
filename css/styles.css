@@ -1,5 +1,40 @@
-.body {
-    font-family: 'Raleway', sans-serif;
-        
+.body {     
     font-family: 'Roboto', sans-serif;
+ font-family: 'Raleway', sans-serif; 
+    color: #000000;
+}
+
+/* Логотип в header */
+.header-logo {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+        text-decoration: none;
+}
+.header-logo-1 {
+    color: #000000;
+}
+
+/* Навигация */
+.nav-menu {
+list-style-type: none;
+}
+
+.navigation {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+
+}
+.navigation:hover,
+.navigation:focus {
+    color: #2196F3;
 }
