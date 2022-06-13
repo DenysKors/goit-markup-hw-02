@@ -54,6 +54,43 @@
 	color: #2196f3;
 }
 
+/* Секция Hero */
+
+.hero {
+	background-color: #2f303a;
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.hero-button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	border-color: #188ce8;
+	background-color: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background-color: #188ce8;
+}
 /* Секция Features */
 
 .features {
