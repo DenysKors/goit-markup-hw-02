@@ -160,7 +160,7 @@
 }
 
 .team-member {
-	background-color: #ffffff;
+	background-color: var(--main-background-color);
 }
 
 /* Подвал */
