@@ -1,7 +1,14 @@
+:root {
+	--accent-color: #2196f3;
+	--main-text-color: #212121;
+	--text-color: #757575;
+	--main-background-color: #ffffff;
+}
+
 .body {
-	font-family: "Raleway", sans-serif;
 	font-family: "Roboto", sans-serif;
-	color: #000000;
+	color: var(--main-text-color);
+	background-color: var(--main-background-color);
 }
 
 /* Логотип в header */
@@ -11,7 +18,7 @@
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	color: #2196f3;
+	color: var(--accent-color);
 	text-decoration: none;
 }
 .header-logo-1 {
@@ -20,7 +27,7 @@
 
 /* Навигация */
 
-.nav-menu {
+.list {
 	list-style-type: none;
 }
 
@@ -35,7 +42,11 @@
 
 .nav-link:hover,
 .nav-link:focus {
-	color: #2196f3;
+	color: var(--accent-color);
+}
+
+.site-nav .nav-link.currrent {
+	color: var(--accent-color);
 }
 
 /* Header contacts */
@@ -45,13 +56,13 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: #757575;
+	color: var(--text-color);
 	text-decoration: none;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 
 /* Секция Hero */
@@ -82,7 +93,7 @@
 	letter-spacing: 0.06em;
 	color: #ffffff;
 	border-color: #188ce8;
-	background-color: #2196f3;
+	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 }
@@ -93,25 +104,19 @@
 }
 /* Секция Features */
 
-.features {
-	list-style-type: none;
-}
-
 .features-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #212121;
 }
 
 .features-text {
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: #757575;
+	color: var(--text-color);
 }
 
 /* Секция Чем занимаемся */
@@ -122,11 +127,6 @@
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
-}
-
-.work-example {
-	list-style-type: none;
 }
 
 /* Секция Команда */
@@ -141,11 +141,6 @@
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
-}
-
-.team-list {
-	list-style-type: none;
 }
 
 .team-name {
@@ -154,16 +149,14 @@
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
 }
 
 .team-job {
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #757575;
+	color: var(--text-color);
 }
 
 .team-member {
@@ -182,7 +175,7 @@
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	color: #2196f3;
+	color: var(--accent-color);
 	text-decoration: none;
 }
 
@@ -211,16 +204,12 @@
 
 .address-contact:hover,
 .address-contact:focus {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 
 /* СТРАНИЦА ПОРТФОЛИО */
 
 /* Кнопки селектора */
-
-.filter {
-	list-style-type: none;
-}
 
 .filter-buttons {
 	font-family: inherit;
@@ -242,5 +231,21 @@
 	background-color: #2196f3;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
-	border-color: #2196f3;
+	border-color: var(--accent-color);
+}
+
+/* Примеры Portfolio */
+
+.portfolio-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
 }
